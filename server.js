@@ -13,8 +13,8 @@ app.use(cors()); // Add this line
 
 app.use(express.json());
 
-app.use("/api/contacts", require("./routes/contactRoutes"));
-app.use("/api/users", require("./routes/userRoutes"));
+app.use("/api/trainee", require("./routes/traineeRoutes"));
+app.use("/api/admins", require("./routes/adminRoutes"));
 
 // Error Handling Middleware should be after all routes
 app.use(errorHandler);
