@@ -15,6 +15,7 @@ app.use(express.json());
 
 app.use("/api/trainee", require("./routes/traineeRoutes"));
 app.use("/api/admins", require("./routes/adminRoutes"));
+app.use("/api/subscription",require("./routes/subscriptionRoutes"));
 
 // Error Handling Middleware should be after all routes
 app.use(errorHandler);
